@@ -1,0 +1,986 @@
+
+/* Main Body */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body Center the webpage*/
+body {
+    background-color: azure;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Center and scale the image */
+.banner {
+	background-image: url('images/Beachchair2.jpg');
+    width: 100%;
+    background-size: cover; 
+    background-position: bottom;
+    display: flex;
+    height: 80vh;
+    background-color:skyblue;
+}
+
+/* Banner Title */
+.bannertitle {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    margin-left:3em;
+}
+
+
+/* Increase the font size of the heading */
+.bannertitle h1 {
+    font-size: 84px;
+    font-family: rage;
+    color: white;
+    font-weight: 400;
+}
+
+
+.bannertitle h2 {
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  vertical-align: middle;
+}
+
+.ibutton {
+  background-color:skyblue;
+  color: white;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 3em;
+  padding: 10px ;
+  border: white solid 2px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+
+.ibutton:hover {
+  background-color: steelblue;
+}  
+
+/* Needed to position the navbar */
+.header {
+    overflow: hidden;
+    background-color:skyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height:70px;
+    padding-top: 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 300px;
+    align-items: top;
+    padding: 0px, 5px;
+}
+
+
+/* Button Style for All */
+.button {
+    display: inline block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 12px;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    width: 100px;
+    border-radius: 4px;
+    background-color: orange;
+    color: white;
+    border: 1px solid gainsboro;
+    text-decoration: none;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: steelblue;
+}  
+
+
+/* Sticky navbar - toggles between relative and fixed,
+depending on the scroll position. It is positioned relative
+until a given offset position is met in the viewport
+then it "sticks" in place (like position:fixed).*/
+
+/* The navbar */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    overflow: hidden;
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style the navigation bar links */
+.navigation a {
+    display: block;
+    font-size: 18px;
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.navigation a:hover {
+    background-color: whitesmoke;
+    color: coral;
+}
+
+/* Active/current link */
+.navigation a.active {
+    background-color: whitesmoke;
+    color: lightcoral;
+  }
+  
+.dropdown {
+    position: relative;
+}
+.dropdown > a::after {
+    content: "\25bc";
+    font-size: 90%;
+    margin-left: 0.5em;
+}
+.dropdown:hover .dropdown-menu {
+    max-height: 300px;
+}
+.dropdown-menu {
+    top:0;
+    position: absolute;
+    background-color: lightpink;
+    z-index: 9999;
+    /* max-height: 0; */
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.dropdown-menu a {
+    white-space: nowrap;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: indianred;
+    font-family: 'Segoe UI', arial, sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+  background-color: white;
+}
+
+.cardtext{
+    margin-top: 5px;
+    background-color: silver;
+    color: white;
+    justify-content: space-between;
+}
+
+/* Center Content on Page. */
+.content {
+    max-width: 1280px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+.maintext h1{
+    font-size: 36px;
+}
+
+.text-center {
+    display: block;
+    width: 100%;
+    font-family: Verdana, sans-serif;
+	  text-align: center;
+    padding: 2px;
+    background: white;
+    color: darkgray;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.text-centerbkgd {
+  display: block;
+  width: 100%;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  padding: 2px;
+  color: darkgray;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: azure;
+}
+
+.container-fluid {
+    display: block;
+}
+
+.container-fluid ::before,
+.container-fluid ::after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.col-promo {
+    width: 33.33%;
+    background-color: white;
+    position: relative;
+    float: left;
+    padding-right: 5px;
+    padding-left: 5px;
+    min-height: 10px;
+}
+
+.promo-item {
+    height: 230px;
+    line-height: 180px;
+    text-align: center;
+    border: 5px solid white;
+}
+
+.promo-item:hover {
+    background-size: 100%; 
+    border: 5px solid #9ddce0;
+    line-height: 170px;
+    text-shadow: antiquewhite ;
+}
+
+.promo-item h3 {
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+.item-1 {
+	background: url('../images/dog\ unwind2.jpg');
+}
+	
+.item-2 {
+	background: url('../images/Cat\ Relax.jpg');
+}
+	
+.item-3 {
+	background: url('../images/Dog\ Welcome.jpg');
+}
+		
+.item-1,
+.item-2,
+.item-3 {
+	background-size: cover;
+	background-position: 20% 30%;
+}
+
+
+  /* Create two unequal columns that sits next to each other */
+  /* Right Column */
+.sixty {
+    width: 50%;
+    float: left;
+    background-color:ghostwhite;
+    padding: 0 0 0 20px;
+    margin-top: 20px;
+}
+  
+  /* Left column */
+.forty { 
+    width: 50%;
+    float: left;
+    margin-right: 15px;
+    background-color:ghostwhite;
+    margin-top: 20px;
+}
+
+.video {
+	aspect-ratio: 16/9;
+	height: 52vh;
+  max-width: 100%;
+	background-color: lightcoral;
+}
+	
+.video iframe {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.infotext {
+  padding: 5px 20px 14px 40px;
+  height: 52vh;
+  background-color:silver;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardtext {
+    padding: 18px 16px;
+    height: 50vh;
+}
+
+.cardtext::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.fpcol-container {
+	  display: flex;
+    float: left;
+    width: 25%;
+    margin-bottom: 5px;
+    padding: 0 4px;
+}
+
+.Promo-title h1 {
+    width: 100%;
+    align-content: center;
+    display: block;
+    background-color: azure;
+    color: sandybrown;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 30;
+}
+
+.featured-product {
+	flex:1;
+	padding: 5px;
+	background-color:transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 5px;
+}
+
+
+.featured-product > img,
+.featured-product > a > img {
+	height: 200px;
+  width: 100%;
+}
+
+.featured-product h3 {
+  color: indianred;
+  font-weight: 500;
+	font-size: 22px;
+  text-align: left;
+}
+
+.featured-product .price {
+	color: #dd845a;
+	font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+	
+.featured-product .price s {
+	color: #999;
+	font-size: 18px;
+}
+
+.phone {
+    background-color: sandybrown;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    min-height: 20px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+fivecolumn {
+  display: block;
+  margin-right: 0;
+  margin-left: 0;
+  height: 500px;
+}
+
+.homemap {
+  width: 50%;
+  float: left;
+  height: 53vh;
+	border-color: #c0bfbf;
+  aspect-ratio: 16/9;
+  padding: 0 0 0 20px;
+  margin-top: 20px;
+}
+
+.homemap iframe {
+	width: 100%;
+	height:100%;
+	display: block;
+}
+
+.directinfo {
+    width: 50%;
+    background: gainsboro;
+    padding: 10px 10px;
+    float: left;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+/* .diphoto {
+    width: 15%;
+    float: left;
+    margin-top: 20px;
+} */
+.LTcolumn{
+  width: 80%;
+  background-color: azure;
+}
+
+.RTcolumn img {
+  width: 230px;
+  height: 200px;
+	display: cover;
+  float: right;
+}
+  
+  /* End of Homepage Main Body */
+
+  /* Footer section */
+.footer-info {
+    padding: 10px 0;
+    border-color: gray;
+    background: snow;
+}
+
+.footer-info,
+.footer-info a:link,
+.footer-info a:hover,
+.footer-info a:focus,
+.footer-info a:visited {
+    color:steelblue;
+	}
+
+.footer-info h3 {
+	color:steelblue;
+    font-weight: bold;
+	font-size: 16px;
+    padding-right: 2rem;
+	}
+    
+.footer-info-item {
+    padding: 0px 10px;
+    text-align: center;
+    color:tomato;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.input-group {
+    line-height: 5;
+}
+
+.triplecolumn {
+    display: flex;
+    background: gainsboro;
+    padding-top: 50px;
+    flex: 33.33%;
+    padding: 10px;
+    float: left;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.small-print {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  color:steelblue;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+ <!--end of body for Home page-->
+
+/* *********************************************************************************** */
+  /* About Us Page CSS */
+
+  /* <!--About our Apartment--> */
+
+  twocolumn {
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+    height: 400px;
+  }
+
+.rightside {
+    width: 50%;
+    background-color: white;
+    position: relative;
+    float: left;
+    padding-right: 25px;
+    padding-left: 35px;
+  }
+
+.leftside {
+    display: block;
+    width: 50%;
+    background-color: skyblue;
+    position: relative;
+    float: left;
+    padding-right: 25px;
+    padding-left: 5px;
+}
+
+/* Create a hanging indent */
+.Aptinfo {
+  line-height: 2em;
+  margin-top: 8em;
+  margin-bottom: 8em;
+  padding-left: 32px;
+  text-indent: -32px;
+  padding-right: 20px;
+}
+
+/* Resize photos */
+.Aptpic img {
+    display: flex;
+    max-width: 600px;
+    max-height: 300px;
+}
+
+/* <!-- Flip Card for Facilities --> */
+
+ /* Float four columns side by side */
+.flipcolumn {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+  
+  /* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Style the counter cards */
+.flipcont-card {
+    box-shadow: 0 4px 8px 0 silver);
+    padding: 0, 10px;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+  /* The flip card container -
+      Added the border property to demonstrate that the flip itself 
+      goes out of the box on hover 
+      Added perspective to create the 3D effect) */
+
+.flip-card { 
+    background-color: transparent;
+    width: 350px;
+    height: 300px;
+    border: 1px solid azure;
+    perspective: 1000px; /* 3D effect */
+}
+  
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 gainsboro;
+}
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: silver;
+    color: black;
+}
+  
+  /* Style the back side */
+.flip-card-back {
+    background-color: cornflowerblue;
+    font-size: 16px;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    transform: rotateY(180deg);
+}
+
+/* About Us page Testimonial */
+
+.ttcolumn h2 {
+    font-size: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center ;
+    color: white;
+    background-color:transparent;
+
+}
+
+  /* Create four equal columns that floats next to each other */
+.ttcolumn {
+    float: left;
+    width: 25%;
+    padding: 30px;
+    color: gainsboro;
+    background: url('../images/quoteicon4.jpg');
+}
+  
+  /* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Scolling Text */
+.scollingtext {
+  height: 80px;	
+  overflow: hidden;
+  position: relative;
+  background-color: gainsboro;
+}
+
+.scollingtext h2 {
+  font-size: 3em;
+  font-style: italic;
+  font-family: 'Lucida Sans', sans-serif;
+  color:tomato;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 70px;
+  text-align: center;
+
+  /* Starting position */
+-moz-transform:translateX(100%);
+-webkit-transform:translateX(100%);	
+transform:translateX(100%);
+
+  /* Apply animation to this element */	
+-moz-animation: scollingtext 15s linear infinite;
+-webkit-animation: scollingtext 15s linear infinite;
+animation: scollingtext 15s linear infinite;
+}
+
+  /* Move it (define the animation) */
+@-moz-keyframes scollingtext {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+ 
+}
+@-webkit-keyframes scollingtext {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scollingtext {
+  0%   { 
+-moz-transform: translateX(100%); /* Firefox bug fix */
+-webkit-transform: translateX(100%); /* Firefox bug fix */
+transform: translateX(100%); 		
+}
+  100% { 
+-moz-transform: translateX(-100%); /* Firefox bug fix */
+-webkit-transform: translateX(-100%); /* Firefox bug fix */
+transform: translateX(-100%); 
+}
+}
+
+/* Price and T&C Section */
+/* Create three equal columns that floats next to each other */
+
+.PTColumn {
+  float: left;
+  width: 33.3%;
+  color: white;
+  padding: 3em;
+  line-height: 30px;
+  padding: 25px;
+  height: 420px; 
+}
+
+.PTColumn h2 {
+    color: white;
+    font-size: 32px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.PTColumn button {
+    align-items: center;
+    align-self: center;
+}
+
+<!-- Flickity Carousel for Local Attractions-->
+/* slideshow */
+
+.slideshow {
+  min-width: 100vw; 
+  margin-bottom: 3em;
+	background-color: lightcoral;
+}
+  
+.slide img  {
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Pet Friedly Policy */
+
+.pfcolumn {
+  display: flex;
+  height: 500px;
+}
+
+.pf1col, .pf2col, .pf3col {
+  display: block;
+  width: 35%;
+  float: left;
+  max-width: 100%;
+  color: white;
+}
+
+.pf1col img {
+  width: 100%;
+  height: 100%;
+  margin-left: 50px;
+}
+
+.pf2col {
+  background-color:silver;
+  padding-left: 8vh;
+  padding-right: 8vh;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+.pf1co3 img {
+  width: 100%;
+}
+
+
+  /* *********************************************************************************** */
+
+  /* Contact Us Page CSS */
+
+  /* Style inputs */
+input[type=text], input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    margin: 8px 0;
+    resize: vertical;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+  
+input[type=submit] {
+    background-color: rosybrown;
+    color: white;
+    font: 1em sans-serif;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border-color: azure;
+    float: right;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover,
+input[type=chat]:hover {
+    background-color: steelblue;
+}
+  
+input[type=chat] {
+    width: 150px;
+    background-color: mediumseagreen;
+    color: white;
+    font: 1em sans-serif;
+    padding: 12px 10px;
+    border-radius: 4px;
+    border-color: azure;
+    float: left;
+    cursor: pointer;
+}
+  
+  /* space from the left side of the input for icons */
+.inputWithIcon input[type="text"] { 
+    padding-left: 40px;
+}
+  
+  /* background color for the icon */
+.inputWithIcon i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 4px 0 0 4px;
+}
+
+  /* Keep the relative position for the inputWithIcon class but  */
+  /* use absolute position for the i element that contains the Font Awesome icon.  */
+  /* Similarly, specify the left value as 0, padding, and color property for the icon. */ 
+
+.inputWithIcon {
+    position: relative;
+}
+   
+.inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    padding: 13px 6px;
+    color: white;
+    transition: 0.3s;
+}
+  
+  /* Style the container/contact section */
+.contactcontainer {
+    border-radius: 8px;
+    background-color: gainsboro;
+    margin: 0 auto;
+    padding: 20px 20px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+  
+  /* Create three columns that float next to eachother */
+.column3pt {
+    float: left;
+    width: 33%;
+    margin-top: 6px;
+    padding: 10px;
+}
+
+.column3pt img {
+    margin-top: 10px;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* *********************************************************************************** */
+  /* Responsive CSS */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+}
+
+
+/* Large devices (laptops/desktops, 900px and up) */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media only screen and (max-width: 900px) {
+.rightside,
+.leftside,
+.featured-product,
+.infotext,
+.column3pt,
+.flipcolumn,
+.ttcolumn,
+.PTCcolumn {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: royalblue;}
+} 
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Responsive layout - makes the two columns stack on top of each other */
+@media only screen and (max-width: 600px) {
+.col-promo,
+.sixty,
+.forty,
+.LTcolumn,
+.RTcolumn,
+.homemap,
+.directinfo,
+.rightside,
+.leftside,
+.featured-product,
+.infotext,
+.column3pt,
+.triplecolumn,
+.flipcolumn,
+.ttcolumn,
+.PTCcolumn,
+.column3pt, input[type=submit] {
+	  display: block;
+	  width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
