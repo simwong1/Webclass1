@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html><html lang="en">
+
+<head>
+<title>Sorrento by the sea website - Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+<!-- Sorrento CSS -->
+<link rel="stylesheet" href="sorrento.css">
+<!--Validate user input using JavaScript-->
+<script src="validatemyform.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <div class="container">
+    <header class="header">
+    <a class="navbar-brand" href="SorrentoHome.html">
+      <img class="logo" src="images/new logo2.jpg">
+    </a>
+    <!-- Navbar links -->
+    <nav class="navigation">
+      <a class="active" href="SorrentoHome.html"><i class="fa fa-fw fa-home"></i> Home</a>
+
+      <div class="dropdown">
+        <a href="#"><i class="fa fa-fw fa-user"></i> About Us</a>
+        <nav class="dropdown-menu">
+          <a href="About Us.html#AI">Apartment Information</a>
+          <a href="About Us.html#FA">Facilities & Amenities</a>
+          <a href="About Us.html#TT">Testimonials</a>
+          <a href="About Us.html#SOR">Highlights of Sorrento</a>
+          <a href="About Us.html#PF">Pet Friendly Policy</a>
+          <a href="About Us.html#PTC">Pricing</a>
+          <a href="About Us.html#PTC">Terms & Conditions</a>
+        </nav>
+      </div>
+
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+
+      <div class="dropdown">
+        <a href="#"><i class="fa fa-fw fa-search"></i> Gallery </a>
+        <nav class="dropdown-menu">
+          <a href="Gallery.html">Beaches</a>
+          <a href="Gallery.html">Sorrento Attractions</a>
+          <a href="Gallery.html">Facilities & Amenities</a>
+        </nav>
+      </div>
+
+      <a href="Contact Us.html#checkin">Book Now</a>
+    </nav>
+    </header>
+  </div>
+
+
+
+  <div class="maintext"></div>
+  <!-- <div style="text-align:center"> -->
+    <h2>Contact Us</h2>
+    <p class="text-centerbkgd">Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+
+  <div class="contactcontainer">
+  <div class="row">
+
+  <form name="contactForm" onsubmit="return validateForm()" action="index.html" method="post">
+    <div class="column3pt">
+        <div class="inputWithIcon">
+            <input type="text" id="name" name="name" placeholder="Enter your Full Name" maxlength="30">
+            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+            <div class="error" id="nameErr"></div>
+        </div>
+
+        <div class="inputWithIcon">
+            <input type="text" id="email" name="email" placeholder="Enter a valid email address..">
+            <i class="fa fa-solid fa-at fa-lg fa-fw" aria-hidden="true"></i>
+            <div class="error" id="emailErr"></div>
+        </div>     
+
+        <div class="inputWithIcon">
+            <input type="text" id="mobile" name="mobile" placeholder="Enter your contact phone number" maxlength="10">
+            <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+            <div class="error" id="mobileErr"></div>
+        </div>
+
+        <div class="inputWithIcon">
+            <input type="text" id="checkin" name="checkin" placeholder="Arrival Date : Please select from calender below  ">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <input type="date" id="checkin" name="checkin" placeholder="Arrival" style="center">
+        </div>
+
+        <div class="inputWithIcon">
+            <input type="text" id="checkout" name="checkout" placeholder="Departure Date : Please select from calender below"> 
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <input type="date" id="checkout" name="checkout" placeholder="Departure">
+        </div>
+    </div>
+
+    <div class="column3pt">
+      <textarea id="subject" name="subject" placeholder="Enter your message here ..." style="height:350px"></textarea>
+      <input type="submit" value="Submit" name="Send" />
+      <img src="images/whatsapp2.png">
+      <a class="iphone" href="tel:0435 123 456">
+      <input type="chat" value=" Send us an SMS "></a>
+    </div>
+  </form>
+
+    <div class="column3pt">
+      <img src="images/host3.jpg" style="width:100%">
+    </div>
+    
+  </div> <!--row-->
+  </div> <!--contactcontainer-->
+
+
+<footer>
+
+  <div class= "footer-info-item text-center">
+    <h2>Contact Us</h2>
+    <p>info@sorrentobythesea.com.au</p>
+    <a class="phone" href="tel:0435 123 456">
+      <i class="fa fas fa-phone-square fa-lg"></i> 0435 123 456</a>
+  </div>
+
+	<!-- Footer Links -->
+  <!-- <div class="container"> -->
+    <div class="footer-info">
+      <div class="container">
+          <div class="triplecolumn">
+            <h3>Sitemap</h3>
+            <ul class="list-unstyled">
+              <li><a href="SorrentoHome.html">Home</a></li>
+              <li><a href="About Us.html">About Us</a></li>
+              <li><a href="Contact Us.html">Contact Us</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+              <li><a href="Contact Us.html#checkin">Book Now</a></li>
+              <li><a href="Contact Us.html#TC">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="triplecolumn">
+            <h3>Social Media</h3>
+            <ul class="no-bullets">
+              <li><img src="images/facebook_small.png">
+                <a href="https://Facebook.com/sorrento">   Facebook </a></li>
+              <li><img src="images/twitter_small.png">
+                <a href="https://twitter.com/sorrento">   Twitter </a></li>
+              <li><img src="images/instagram_small2.png">
+                <a href="https://instagram.com/sorrento">   Instagram </a></li>
+              <li><img src="images/youtube-variation_small.png">
+                <a href="https://youtube.com/sorrento">   YouTube </a></li>
+              <li><img src="images/whatsapp2.png">
+                <a href="tel:0435 123 456">   WhatsApp</a></li>
+              <li><img src="images/email2.png">
+                <a href="mailto:info@sorrentobythesea.com.au">   Email </a></li>
+            </ul>
+          </div>
+          <div class="triplecolumn">
+            <p>Sign up for exclusive offers.</p>
+            <div class="input-group">
+              <input type="text" id="email" placeholder="Enter your email here">
+              <button class="button" type="button"> Subscribe! </button> 
+            </div>
+          </div>
+      </div><!-- /.container -->
+    </div> <!--footer-info-->
+          
+    <!-- Copyright etc -->
+      <div class="small-print">
+        <p><a href="About Us.html#PTC">Terms &amp; Conditions</a> | <a href="#">Privacy 
+        <p>Copyright &copy; Sorrentobythesea.com.au 2021 </p>
+      </div>
+          
+  </footer>
+  
+</body>
+</html>
