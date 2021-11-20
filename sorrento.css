@@ -19,7 +19,7 @@ body {
     background-size: cover; 
     background-position: bottom;
     display: flex;
-    height: 80vh;
+    height: 70vh;
     background-color:skyblue;
 }
 
@@ -61,22 +61,20 @@ body {
   text-decoration: none;
 }
 
-
 .ibutton:hover {
   background-color: steelblue;
 }  
 
 /* Needed to position the navbar */
 .header {
-    overflow: hidden;
     background-color:skyblue;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-height:70px;
-    padding-top: 30px;
+    max-height: 90px;
+    padding-top: 2px;
     position: sticky;
     top: 0;
     left: 0;
@@ -84,8 +82,7 @@ body {
 
 .logo {
     width: 300px;
-    align-items: top;
-    padding: 0px, 5px;
+    padding: 5px, 5px;
 }
 
 
@@ -123,16 +120,14 @@ then it "sticks" in place (like position:fixed).*/
     display: flex;
     flex-direction: row;
     align-self: flex-end;
-    overflow: hidden;
     background-color: transparent;
     font-family: 'Times New Roman', Times, serif;
 }
 
 /* Style the navigation bar links */
 .navigation a {
-    display: block;
-    font-size: 18px;
-    float: right;
+    display: inline-block;
+    font-size: 20px;
     display: block;
     color: white;
     text-align: center;
@@ -149,29 +144,34 @@ then it "sticks" in place (like position:fixed).*/
 /* Active/current link */
 .navigation a.active {
     background-color: whitesmoke;
-    color: lightcoral;
+    color: coral;
   }
   
 .dropdown {
     position: relative;
 }
+
 .dropdown > a::after {
-    content: "\25bc";
+    content: "\2B9B";
     font-size: 90%;
     margin-left: 0.5em;
+    padding: 1em;
 }
+
 .dropdown:hover .dropdown-menu {
-    max-height: 300px;
+    max-height: 500px;
+
 }
+
 .dropdown-menu {
-    top:0;
     position: absolute;
     background-color: lightpink;
     z-index: 9999;
-    /* max-height: 0; */
+    max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
 }
+
 .dropdown-menu a {
     white-space: nowrap;
 }
@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
     color: indianred;
     font-family: 'Segoe UI', arial, sans-serif;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .container {
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 36px;
 }
 
-.text-center {
+.introtext-center {
     display: block;
     width: 100%;
     font-family: Verdana, sans-serif;
@@ -217,8 +217,21 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2px;
     background: white;
     color: darkgray;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.text-center {
+  display: block;
+  width: 100%;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  padding: 2px;
+  background: white;
+  color: darkgray;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .text-centerbkgd {
@@ -531,12 +544,12 @@ ul.no-bullets {
 
   /* <!--About our Apartment--> */
 
-  twocolumn {
+.Apttwocolumn {
     display: block;
-    margin-right: 0;
-    margin-left: 0;
-    height: 400px;
-  }
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
 .rightside {
     width: 50%;
@@ -545,7 +558,9 @@ ul.no-bullets {
     float: left;
     padding-right: 25px;
     padding-left: 35px;
-  }
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
 
 .leftside {
     display: block;
@@ -554,16 +569,16 @@ ul.no-bullets {
     position: relative;
     float: left;
     padding-right: 25px;
-    padding-left: 5px;
+    padding-left: 0px;
 }
 
 /* Create a hanging indent */
 .Aptinfo {
   line-height: 2em;
-  margin-top: 8em;
-  margin-bottom: 8em;
+  margin-top: 4em;
+  margin-bottom: 4em;
   padding-left: 32px;
-  text-indent: -32px;
+  text-indent: -20px;
   padding-right: 20px;
 }
 
@@ -571,7 +586,7 @@ ul.no-bullets {
 .Aptpic img {
     display: flex;
     max-width: 600px;
-    max-height: 300px;
+    max-height: 250px;
 }
 
 /* <!-- Flip Card for Facilities --> */
@@ -674,6 +689,7 @@ ul.no-bullets {
     padding: 30px;
     color: gainsboro;
     background: url('../images/quoteicon4.jpg');
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
   
   /* Clear floats after the columns */
@@ -747,7 +763,8 @@ transform: translateX(-100%);
   padding: 3em;
   line-height: 30px;
   padding: 25px;
-  height: 420px; 
+  height: 450px; 
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .PTColumn h2 {
@@ -810,6 +827,7 @@ transform: translateX(-100%);
   padding-right: 8vh;
   text-align: center;
   line-height: 1.8em;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .pf1co3 img {
