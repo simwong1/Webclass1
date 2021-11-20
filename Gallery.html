@@ -4,47 +4,89 @@
 <head>
 <title>Sorrento by the Sea Gallery Page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="sorrento.css">
 </head>
 
 <style>
 /* overwrite w3css */
-.w3-card img {
+.gallery img {
   max-height: 300px;
   display: cover;
 }
 
 </style>
+
+
 <body>
-<div class="w3-container w3-teal">
+
+  <!-- Navigation -->
+
+    <header class="header">
+        <a class="navbar-brand" href="SorrentoHome.html">
+          <img class="logo" src="images/new logo2.jpg">
+        </a>
+        <!-- Navbar links -->
+        <nav class="navigation">
+          <a class="active" href="SorrentoHome.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    
+          <div class="dropdown">
+            <a href="About Us.html"><i class="fa fa-fw fa-user"></i> About Us</a>
+            <nav class="dropdown-menu">
+              <a href="About Us.html#AI">Apartment Information</a>
+              <a href="About Us.html#FA">Facilities & Amenities</a>
+              <a href="About Us.html#TT">Testimonials</a>
+              <a href="About Us.html#SOR">Highlights of Sorrento</a>
+              <a href="About Us.html#PF">Pet Friendly Policy</a>
+              <a href="About Us.html#PTC">Pricing</a>
+              <a href="About Us.html#PTC">Terms & Conditions</a>
+            </nav>
+          </div>
+    
+          <a href="Contact Us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+    
+          <div class="dropdown">
+            <a href="Gallery.html"><i class="fa fa-fw fa-search"></i> Gallery </a>
+            <nav class="dropdown-menu">
+              <a href="Gallery.html">Beaches</a>
+              <a href="Gallery.html">Sorrento Attractions</a>
+              <a href="Gallery.html">Facilities & Amenities</a>
+            </nav>
+          </div>
+    
+          <a href="Contact Us.html#checkin"><i class="fa fa-light fa-thumbs-up"></i> Book Now </a>
+        </nav>
+        </header>
+
+
+<div class="desc w3-teal">
 <h1><i>Sorrento by the Sea Holiday - Fun never stops</h1>
 </div>
 
 /* Welcome to Sorrento */
 <div class="w3-row-padding w3-margin-top">
 
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/logo1.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>From the Sky</h4>
     </div>
     </div>
     </div>
 
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/logoicon4.jfif" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Happy Holiday</h4>
     </div>
     </div>
     </div>
 
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>From the Sea</h4>
     </div>
     </div>
@@ -56,28 +98,28 @@
 /* Beautiful Beaches*/
 <div class="w3-row-padding w3-margin-top">
 
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/ocean_beach.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Ocean Beach 1</h4>
     </div>
     </div>
     </div>
 
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/ocean_beach2.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Ocean Beach 2</h4>
     </div>
     </div>
     </div>
 
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/ocean_beach3.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Ocean Beach 3</h4>
     </div>
     </div>
@@ -89,28 +131,28 @@
 /* More Beaches */
 <div class="w3-row-padding w3-margin-top">
 
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/to the beach.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>To the Beach</h4>
     </div>
     </div>
     </div>
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/Picnic.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Have a Picnic</h4>
     </div>
     </div>
     </div>
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/go for a swim.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Go for a swim</h4>
     </div>
     </div>
@@ -121,28 +163,28 @@
 
 /* Other Attractions */
 <div class="w3-row-padding w3-margin-top">
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/Jetty Sunset.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Jetty Sunset</h4>
     </div>
     </div>
     </div>
 
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/Jetty with kid2.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Spent time with your love ones</h4>
     </div>
     </div>
     </div>
 
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/playgolf45.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Play Golf</h4>
     </div>
     </div>
@@ -153,28 +195,28 @@
 
 /* Share with others */
 <div class="w3-row-padding w3-margin-top">
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/Pf2 Relax with dog2.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Enjoy with your friend</h4>
     </div>
     </div>
     </div>
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/ko.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Have a sleep-in</h4>
     </div>
     </div>
     </div>
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/Dolphine Play.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Say Hello to our neighbor</h4>
     </div>
     </div>
@@ -186,28 +228,28 @@
 /* Whatever you enjoy */
 <div class="w3-row-padding w3-margin-top">
 
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/senic walk.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Go for a senic walk</h4>
     </div>
     </div>
     </div>
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/Food3.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>For the Foodie</h4>
     </div>
     </div>
     </div>
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/low tide.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Low Tide</h4>
     </div>
     </div>
@@ -219,28 +261,28 @@
 /* For the Foodie */
 <div class="w3-row-padding w3-margin-top">
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/Farmer Market2.jfif" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Farmer Market</h4>
     </div>
     </div>
     </div>
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/cafe.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Treat Yourself</h4>
     </div>
     </div>
     </div>
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/farmers-market 3.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Organic Produce</h4>
     </div>
     </div>
@@ -253,28 +295,28 @@
 /* Enjoy Your Stay */
 <div class="w3-row-padding w3-margin-top">
 
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/Spoil you.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>We love to spoil you</h4>
     </div>
     </div>
     </div>
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/kitchen2.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Have a cuppa anytime you want</h4>
     </div>
     </div>
     </div>
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/Breakfast 22.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Hearty Breakfast</h4>
     </div>
     </div>
@@ -286,34 +328,96 @@
 /* Be Yourself */
 <div class="w3-row-padding w3-margin-top">
 
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/Leather Sofa2.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Relax and read a book</h4>
     </div>
     </div>
     </div>
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/wine tasting.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Go for a wine tasting tour</h4>
     </div>
     </div>
     </div>
     
-    <div class="w3-third">
-    <div class="w3-card">
+    <div class="responsive">
+    <div class="gallery">
     <img src="images/pottery.jpg" style="width:100%">
-    <div class="w3-container">
+    <div class="desc">
     <h4>Make your own pottery</h4>
     </div>
     </div>
     </div>
     
 </div>
+
+<div class="clearfix"></div>
+
+<footer>
+
+    <div class= "footer-info-item text-center">
+        <h2>Contact Us</h2>
+        <p>info@sorrentobythesea.com.au</p>
+  <a class="phone" href="tel:0435 123 456">
+    <i class="fa fas fa-phone-square fa-lg"></i> 0435 123 456</a>
+    </div>
+
+<!-- Footer Links -->
+<!-- <div class="container"> -->
+<div class="footer-info">
+  <div class="container">
+          <div class="triplecolumn">
+                <h3>Sitemap</h3>
+                <ul class="list-unstyled">
+                    <li><a href="SorrentoHome.html">Home</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Contact Us.html#checkin">Book Now</a></li>
+                    <li><a href="Contact Us.html#TC">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+          </div>
+            <div class="triplecolumn">
+                <h3>Social Media</h3>
+                <ul class="no-bullets">
+                    <li><img src="images/facebook_small.png">
+                        <a href="https://Facebook.com/sorrento">   Facebook </a></li>
+        <li><img src="images/twitter_small.png">
+                        <a href="https://twitter.com/sorrento">   Twitter </a></li>
+        <li><img src="images/instagram_small2.png">
+                        <a href="https://instagram.com/sorrento">   Instagram </a></li>
+        <li><img src="images/youtube-variation_small.png">
+                        <a href="https://youtube.com/sorrento">   YouTube </a></li>
+        <li><img src="images/whatsapp2.png">
+          <a href="tel:0435 123 456">   WhatsApp</a></li>
+        <li><img src="images/email2.png">
+                        <a href="mailto:info@sorrentobythesea.com.au">   Email </a></li>
+                </ul>
+            </div>
+            <div class="triplecolumn">
+                <p>Sign up for exclusive offers.</p>
+                <div class="input-group">
+        <input type="text" id="email" placeholder="Enter your email here">
+                    <button class="button" type="button"> Subscribe! </button> 
+                </div>
+            </div>
+  </div><!-- /.container -->
+</div> <!--footer-info-->
+    
+<!-- Copyright etc -->
+<div class="small-print">
+      <p><a href="About Us.html#PTC">Terms &amp; Conditions</a> | <a href="#">Privacy 
+      <p>Copyright &copy; Sorrentobythesea.com.au 2021 </p>
+  </div>
+    
+</footer>
 
 </body>
 
