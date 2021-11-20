@@ -805,6 +805,7 @@ transform: translateX(-100%);
 .pfcolumn {
   display: flex;
   height: 500px;
+  margin-top: 50px;
 }
 
 .pf1col, .pf2col, .pf3col {
@@ -956,7 +957,7 @@ input[type=chat] {
 
 .gallery img {
   width: 100%;
-  height: 330px;
+  height: 300px;
 }
 
 .desc h4 {
