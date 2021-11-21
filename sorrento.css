@@ -78,6 +78,7 @@ body {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 99999;
 }
 
 .logo {
@@ -458,11 +459,6 @@ fivecolumn {
     margin-top: 20px;
 }
 
-/* .diphoto {
-    width: 15%;
-    float: left;
-    margin-top: 20px;
-} */
 .LTcolumn{
   width: 80%;
   background-color: azure;
@@ -639,7 +635,12 @@ ul.no-bullets {
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 gainsboro;
 }
-  
+ 
+.flip-card-front img{
+  width: 300px;
+  height: 300px;
+}
+
   /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
@@ -657,7 +658,7 @@ ul.no-bullets {
   /* Style the front side (fallback if image is missing) */
 .flip-card-front {
     background-color: silver;
-    color: black;
+    color: coral;
 }
   
   /* Style the back side */
@@ -788,15 +789,14 @@ transform: translateX(-100%);
 /* slideshow */
 
 .slideshow {
-  min-width: 100vw; 
-  margin-bottom: 3em;
-	background-color: lightcoral;
+  min-width: 100vw;
+  margin-bottom: 5em;
 }
   
-.slide img  {
+.slide img {
   width: 100vw;
-  height: 90vh;
-  object-fit: cover;
+  height: 70vh;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -865,16 +865,17 @@ input[type=submit] {
 }
   
 input[type=submit]:hover,
-input[type=chat]:hover {
+.iphone:hover {
     background-color: steelblue;
 }
   
-input[type=chat] {
+.iphone {
     width: 150px;
     background-color: mediumseagreen;
     color: white;
     font: 1em sans-serif;
     padding: 12px 10px;
+    text-decoration: none;
     border-radius: 4px;
     border-color: azure;
     float: left;
@@ -942,6 +943,11 @@ input[type=chat] {
   /* *********************************************************************************** */
 /* Responsive Image Gallery */
 
+.gallerytitle {
+  font-family: sans-serif;
+  font-size: 22px;
+  margin-top: 3em;
+}
 
 .gallery {
   height: 350px;
@@ -1000,7 +1006,7 @@ input[type=chat] {
   /* Responsive CSS */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .example {background: pink;}
 }
 
@@ -1010,12 +1016,15 @@ input[type=chat] {
 @media only screen and (max-width: 900px) {
 .rightside,
 .leftside,
-.featured-product,
+.fpcol-container,
 .infotext,
 .column3pt,
 .flipcolumn,
 .ttcolumn,
-.PTCcolumn {
+.PTCcolumn,
+.pf1col,
+.pf2col,
+.pf3col {
     width: 50%;
     margin-bottom: 20px;
   }
@@ -1040,13 +1049,16 @@ input[type=chat] {
 .directinfo,
 .rightside,
 .leftside,
-.featured-product,
+.fpcol-container,
 .infotext,
 .column3pt,
 .triplecolumn,
 .flipcolumn,
 .ttcolumn,
-.PTCcolumn,
+.PTColumn,
+.pf1col,
+.pf2col,
+.pf3col,
 .column3pt, input[type=submit] {
 	  display: block;
 	  width: 100%;
